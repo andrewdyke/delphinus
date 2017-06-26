@@ -294,6 +294,8 @@ section#backAndForth {
 	top:0;
 	bottom:0;
 	width: calc(25% - 25px);
+	display: flex;
+	align-items: center;
 	right: 0px;
 	text-align: center;
 	color: white;
@@ -301,8 +303,7 @@ section#backAndForth {
 
 .icon {
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	margin: 0 auto;
 }
 
 .iconBoxL {
