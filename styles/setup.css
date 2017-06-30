@@ -471,3 +471,20 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* Border Box Hack */
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+/* Clearfix Hack */
+.clearfix:after {
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+/* ------------------------- */
