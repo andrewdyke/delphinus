@@ -1,106 +1,106 @@
-
-
 /* Global Styles */
+	body {
+		font-size: 62.5%;
+		font-family: "Montserrat";
+		color: grey;
+		margin: 0;
+		padding: 0;
+	}
 
-body {
-	font-size: 62.5%;
-	font-family: "Montserrat";
-	/*letter-spacing: .8px;*/
-	color: grey;
-	margin: 0;
-	padding: 0;
+	a {
+		text-decoration: none;
+		color: grey;
+	}
+
+	a:hover {
+		color: black;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Roboto Slab";
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		color: black;
+		letter-spacing: 1px;
+	}
+
+	h1 {
+		letter-spacing: 3px;
+		font-size: 0.8rem;
+		line-height: 0.9;
+		margin-bottom: 70px;
+	}
+
+	h2 {
+		font-size: 1rem;
+		letter-spacing: 3px;
+	}
+
+	h3 {
+		font-size: 4rem;
+	}
+
+	h4 {
+		color: white;
+		margin-top: 30px;
+		letter-spacing: 2.3px;	
+	}
+
+	h5 {
+		color:black;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	::-webkit-input-placeholder {
+	   color: grey;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: grey;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: grey;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: grey;  
+	}
+
+	.innerWrapper {
+		max-width: 1080px;
+		margin: 0px auto;
+		padding: 27px 40px;
+	}
+	/* --- End Global Styles -------*/
+
+header {
+	margin: 45px 0 0;
 }
-
-a {
-	text-decoration: none;
-	color: grey;
-}
-
-a:hover {
-	color: black;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Roboto Slab";
-	font-weight: 700;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-	color: black;
-	letter-spacing: 1px;
-}
-
-h1 {
-	letter-spacing: 3px;
-	font-size: 0.8rem;
-	line-height: 0.9;
-	margin-bottom: 70px;
-}
-
-h2 {
-	font-size: 1rem;
-	letter-spacing: 3px;
-}
-
-h3 {
-	font-size: 4rem;
-}
-
-h4 {
-	color: white;
-	margin-top: 30px;
-	letter-spacing: 2.3px;	
-}
-
-h5 {
-	color:black;
-	/*margin: 40px 0 20px;*/
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-::-webkit-input-placeholder {
-   color: grey;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: grey;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: grey;  
-}
-
-:-ms-input-placeholder {  
-   color: grey;  
-}
-
-.innerWrapper {
-	max-width: 1080px;
-	margin: 0px auto;
-	padding: 0 40px;
-}
-
-/* --- End Global Styles -------*/
 
 header a {
 	letter-spacing: 0.8px;
 }
 
 /* shopNav */
-#shopNav {
-	background-color: white;
-	position: fixed;
-    top: 0;
-    height: 45px;
-    width: 100%;
-    border-bottom: 2px solid #f6f6f6;
-    z-index: 99;
-    text-transform: uppercase;
-}
+	#shopNav {
+		background-color: white;
+		/*-webkit-filter: blur(5px);
+		filter: blur(5px);*/
+		position: fixed;
+	  top: 0;
+	  height: 45px;
+	  width: 100%;
+	  border-bottom: 2px solid #f6f6f6;
+	  z-index: 99;
+	  text-transform: uppercase;
+	}
 
 #shopNav ul {
 	padding: 0;
@@ -124,10 +124,11 @@ header a {
 	float: left;
 }
 
-#shopNavR a {
+#shopNavR a,
+#shopNavL a {
 	float: left;
-    display: inline-block;
-    border-left: 2px solid #f6f6f6;
+  display: inline-block;
+  border-left: 2px solid #f6f6f6;
 }
 
 #shopNavR li:nth-child(2) span {
@@ -142,12 +143,6 @@ header a {
 	color: black;
 }
 
-#shopNavL a{
-	float: left;
-    display: inline-block;
-    border-right: 2px solid #f6f6f6;
-}
-
 ul.shopNav li a {
 	color: white;
 	padding: 10px;
@@ -159,10 +154,7 @@ ul.shopNav li a {
 
 
 /* .pageNav */
-
-
 #pageNav {
-	margin: 72px 0 30px;
 	width: 100%;
 }
 
@@ -214,7 +206,6 @@ section.titleBar {
 
 
 /* BIG PHOTO AREA */
-
 #bigPhoto {
 	margin: 0 auto;
 	position: relative;
@@ -243,7 +234,6 @@ div.sloganBox h1 {
 
 
 /* HOME PAGE - Back and Forth */
-
 section#backAndForth {
 	max-width: 1080px;
 	padding:0 25px;
@@ -315,10 +305,9 @@ section#backAndForth {
 }
 
 /* Logo Icons */
-
 section#logoIcons {
 	max-width: 1080px;
-    margin: 0px auto;
+  margin: 0px auto;
 }
 
 
@@ -344,7 +333,6 @@ section#logoIcons {
 #logoIcons li:last-child {
 	padding-right: 0px;
 }
-
 /* End HOME PAGE */
 
 
@@ -384,7 +372,6 @@ input[type=range] {
 	cursor: pointer;
 }
 
-
 input[type=range]::-moz-range-thumb {
 	border: 1px solid #000000;
 	height: 15px;
@@ -394,12 +381,10 @@ input[type=range]::-moz-range-thumb {
 	cursor: pointer;
 }
 
-
 input[type=range]::-moz-range-track {
 	height: 1px;
 	border: 0.2px solid #000000;
 }
-
 
 /* Right Side */
 .showCase {
@@ -536,8 +521,6 @@ ul.right li:first-child {
 .pageNumber a:hover {
 	color: black;
 }
-
-
 /* End Products Page */
 
 
@@ -549,7 +532,6 @@ img.contact {
 
 address {
 	font-style: none;
-	
 }
 
 .addressBox {
@@ -594,14 +576,9 @@ address {
 	margin: 0px 20px 40px 0;
 }
 
-.formBox input:nth-child(3) {
-
-}
-
 .formBox input:nth-child(4) {
 	width: 97%;
 	margin-bottom: 20px;
-	/*height: 32px;*/
 }
 
 textarea {
@@ -631,7 +608,6 @@ div.button p {
 
 /* FOOTER */
 /* Free Shipping and Returns */
-
 #freeSR {
  	width: 100%;
  	background: #f6f6f6;
@@ -640,7 +616,7 @@ div.button p {
 .freeInnerWrap {
 	margin: 0 auto;
 	padding: 60px 0px 60px 20px;
-    max-width: 1080px;
+  max-width: 1080px;
 }
 
 .free {
@@ -657,15 +633,14 @@ div.button p {
 }
 
 .free h2 {
-    width: 100%;
-    text-align: center;
-    margin: 2.3rem 0px;
-    font-size: 1.1rem;
-    letter-spacing: 4px;
+  width: 100%;
+  text-align: center;
+  margin: 2.3rem 0px;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
 }
 
 /* Bottom Nav */
-
 nav.bottomNav {
 	max-width: 1135px;
 	margin: 0 auto;
@@ -747,7 +722,6 @@ h4.black {
 	float: left;
 	color: #000;
 	margin: 31px 0px;
-	/*font-weight: 100;*/
 	font-size: 0.9rem;
 	letter-spacing: 4px;
 }
